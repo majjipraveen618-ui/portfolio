@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Praveenkumar Majji | Python Developer Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#0f172a;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    padding:20px 8%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#facc15;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#facc15;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#facc15;
+    color:black;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    margin:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#eab308;
+    transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+    padding:100px 8%;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.section-title{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* Skills */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    text-align:center;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+}
+
+/* Projects */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project{
+    border:1px solid #ddd;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+/* Internship */
+
+.internship h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.internship ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+/* Contact */
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">Praveenkumar Majji</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#internship">Internship</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div>
+
+<h1>Hi, I'm <span>Praveenkumar Majji</span></h1>
+
+<p>
+Python Developer | Building Web Applications with Python & Django |
+Passionate About Software Development
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I am a motivated B.Tech graduate and aspiring Python Developer with a strong interest in software development, web technologies, and problem-solving.
+
+Currently enhancing my skills in Python Full Stack Development, including Python, Django, HTML, CSS, JavaScript, Bootstrap, and MySQL.
+
+I enjoy building real-world projects, learning new technologies, and continuously improving my technical and professional skills to contribute effectively in the IT industry.
+</p>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">Python</div>
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">Django</div>
+<div class="skill">REST APIs</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
+<div class="skill">Machine Learning</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Internship -->
+
+<section id="internship">
+
+<div class="container internship">
+
+<h2 class="section-title">Internship</h2>
+
+<h3>Artificial Intelligence & Machine Learning Intern</h3>
+
+<p>
+Blackbucks Education Pvt. Ltd. | Dec 2025 - Mar 2026
+</p>
+
+<ul>
+<li>Worked on Machine Learning concepts and predictive modeling.</li>
+<li>Performed data preprocessing and data analysis.</li>
+<li>Developed project-based solutions using AI/ML techniques.</li>
+<li>Applied machine learning algorithms to solve real-world problems.</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Diabetes Prediction System</h3>
+<p>
+Developed a Machine Learning model to predict diabetes using patient health data, including preprocessing, feature engineering, and model evaluation.
+</p>
+</div>
+
+<div class="project">
+<h3>EV Charging Station Cyber Security</h3>
+<p>
+Focused on protecting EV charging stations from cyber attacks using authentication and encryption mechanisms.
+</p>
+</div>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>
+Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<div class="container contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p><strong>Email:</strong> majjipraveen618@gmail.com</p>
+
+<p><strong>LinkedIn:</strong> linkedin.com/in/majji-praveenkumar-269244398</p>
+
+<p><strong>GitHub:</strong> github.com/yourusername</p>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+© 2026 Praveenkumar Majji | Python Developer | Open to Internship & Fresher Opportunities
+</p>
+
+</footer>
+
+</body>
+</html>
