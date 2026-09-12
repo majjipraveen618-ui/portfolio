@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praveenkumar Majji | Python Developer</title>
+
+<style>
+
+:root{
+--bg:#0F172A;
+--card:#1E293B;
+--primary:#38BDF8;
+--secondary:#2563EB;
+--text:#F8FAFC;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111827;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:var(--primary);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--primary);
+}
+
+section{
+padding:100px 8%;
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:var(--primary);
+}
+
+#typing{
+color:var(--primary);
+font-size:30px;
+height:40px;
+margin:15px 0;
+border-right:3px solid var(--primary);
+display:inline-block;
+padding-right:5px;
+animation:blink .8s infinite;
+}
+
+@keyframes blink{
+50%{
+border-color:transparent;
+}
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:var(--primary);
+color:#0F172A;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+margin-top:20px;
+transition:.3s;
+}
+
+.btn:hover{
+background:var(--secondary);
+color:white;
+transform:translateY(-4px);
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:var(--primary);
+}
+
+.card{
+background:var(--card);
+padding:25px;
+border-radius:15px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(56,189,248,.25);
+}
+
+.skill{
+margin-bottom:15px;
+}
+
+.bar{
+height:10px;
+background:#334155;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:var(--primary);
+border-radius:20px;
+animation:grow 2s ease;
+}
+
+@keyframes grow{
+from{
+width:0;
+}
+}
+
+.python{width:90%;}
+.numpy{width:85%;}
+.pandas{width:85%;}
+.html{width:95%;}
+.css{width:90%;}
+.js{width:80%;}
+.django{width:75%;}
+.mysql{width:80%;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px;
+}
+
+footer{
+background:#111827;
+padding:20px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Praveen</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section id="home" class="hero">
+
+<div>
+
+<h1>Hi, I'm <span>Praveenkumar Majji</span></h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Python Developer skilled in Python, NumPy, Pandas,
+HTML, CSS, JavaScript, Django, REST APIs and MySQL.
+Passionate about software development and continuous learning.
+</p>
+
+<a href="Majji_Resume_.pdf" class="btn">View Resume</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+Computer Science graduate passionate about Python Development,
+Full Stack Development and Machine Learning. Strong foundation
+in Python, NumPy, Pandas, HTML, CSS, JavaScript, Django and MySQL.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+<p>Python</p>
+<div class="bar"><div class="fill python"></div></div>
+</div>
+
+<div class="skill">
+<p>NumPy</p>
+<div class="bar"><div class="fill numpy"></div></div>
+</div>
+
+<div class="skill">
+<p>Pandas</p>
+<div class="bar"><div class="fill pandas"></div></div>
+</div>
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar"><div class="fill html"></div></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar"><div class="fill css"></div></div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar"><div class="fill js"></div></div>
+</div>
+
+<div class="skill">
+<p>Django</p>
+<div class="bar"><div class="fill django"></div></div>
+</div>
+
+<div class="skill">
+<p>MySQL</p>
+<div class="bar"><div class="fill mysql"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Diabetes Prediction Using Machine Learning</h3>
+<br>
+<p>
+Developed a machine learning model using Python, NumPy and Pandas
+to predict diabetes risk.
+</p>
+</div>
+
+<div class="card">
+<h3>Protecting EV Charging Stations from Cyber Attacks</h3>
+<br>
+<p>
+Focused on authentication, encryption and cyber security
+for EV charging systems.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2 class="title">Certifications</h2>
+
+<div class="grid">
+
+<div class="card">Python Basics</div>
+
+<div class="card">Artificial Intelligence & Machine Learning</div>
+
+<div class="card">Python Full Stack Development</div>
+
+<div class="card">DevOps Fundamentals</div>
+
+<div class="card">AWS DevOps: Code Build and Test</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="card contact">
+
+<p> majjipraveen618@gmail.com</p>
+
+<p> Hyderabad, Telangana, India</p>
+
+<p> LinkedIn: linkedin.com/in/majji-praveenkumar</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Praveenkumar Majji | Python Developer
+</footer>
+
+<script>
+
+const words=["Aspiring",
+"Python Developer","or",
+"Full Stack Developer",
+];
+
+let i=0;
+let j=0;
+
+function typeEffect(){
+
+document.getElementById("typing").innerHTML=
+words[i].slice(0,j++);
+
+if(j>words[i].length){
+
+j=0;
+i++;
+
+if(i>=words.length){
+i=0;
+}
+
+}
+
+setTimeout(typeEffect,150);
+}
+
+typeEffect();
+
+</script>
+
+</body>
+</html>
